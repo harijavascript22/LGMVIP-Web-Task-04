@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Numerical Calculator</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="calculator">
+			<h1>CASIO</h1>
+			<input type="text" placeholder="0" id='outputscreen'>
+			<button onclick="Clear()" >CL</button>
+			<button onclick="del()" data-key="Backspace">DEL</button>
+			
+               <button onclick="display('%')" class="operators" data-key="%">%</button>
+               <button onclick="display('/')" class="operators" data-key="/">/</button>
+
+               <button onclick="display('7')" data-key="7">7</button>
+               <button onclick="display('8')" data-key="8">8</button>
+               <button onclick="display('9')" data-key="9">9</button>
+               <button onclick="display('*')" class="operators" data-key="*">*</button>
+
+               <button onclick="display('4')" data-key="4">4</button>
+               <button onclick="display('5')" data-key="5">5</button>
+               <button onclick="display('6')" data-key="6">6</button>
+               <button onclick="display('-')" class="operators" data-key="-">-</button>
+
+               <button onclick="display('1')" data-key="1">1</button>
+               <button onclick="display('2')" data-key="2">2</button>
+               <button onclick="display('3')" data-key="3">3</button>
+               <button onclick="display('+')" class="operators" data-key="+">+</button>
+
+               <button onclick="display('.')" data-key=".">.</button>
+               <button onclick="display('0')" data-key="0">0</button>
+               <button onclick="calculate('=')" class='equal' class="operators" data-key="Enter">=</button>
+
+
+		</div>
+	</div>
+<script src="index.js"></script>
+</body>
+</html>
